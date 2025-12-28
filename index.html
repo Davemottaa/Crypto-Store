@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Store | The Future of Shopping</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/6.7.0/ethers.umd.min.js"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="header">
+        <div class="container header-content">
+            <a href="#" class="logo">Crypto<span class="gradient-text">Store</span>.</a>
+            
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#benefits">Benefits</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><button id="connect-wallet-btn" class="btn btn-sm">Connect Wallet</button></li>
+                </ul>
+            </nav>
+
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-text scroll-reveal">
+                    <h1>Buy high-end tech using <span class="gradient-text">only Crypto</span>.</h1>
+                    <p>No banks, no bureaucracy, total privacy. The only store where your Bitcoin, ETH, and USDT are worth real-world products.</p>
+                    <div class="cta-group">
+                        <a href="#products" class="btn btn-primary">Shop Now <i class="fas fa-arrow-right"></i></a>
+                        <span class="trust-badge"><i class="fas fa-shield-alt"></i> 100% Secure Payment</span>
+                    </div>
+                </div>
+                <div class="hero-image scroll-reveal delay-200">
+                    <img src="https://plus.unsplash.com/premium_photo-1681400668073-a1947604dd36?q=80&w=1179&auto=format&fit=crop" alt="Tech Products">
+                </div>
+            </div>
+        </section>
+
+        <section id="benefits" class="section">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <h2>Why choose Crypto Store?</h2>
+                    <p>Built for holders who use their assets in the real world.</p>
+                </div>
+                <div class="benefits-grid">
+                    <div class="benefit-card scroll-reveal">
+                        <div class="icon-box"><i class="fas fa-user-secret"></i></div>
+                        <h3>Total Privacy</h3>
+                        <p>No banking data required. Direct transactions from your wallet to ours.</p>
+                    </div>
+                    <div class="benefit-card scroll-reveal delay-100">
+                        <div class="icon-box"><i class="fas fa-bolt"></i></div>
+                        <h3>Instant Shipping</h3>
+                        <p>Automatic blockchain confirmation. Your order is processed in minutes.</p>
+                    </div>
+                    <div class="benefit-card scroll-reveal delay-200">
+                        <div class="icon-box"><i class="fab fa-ethereum"></i></div>
+                        <h3>Multichain Support</h3>
+                        <p>We accept Ethereum, Solana, BTC, and Polygon. Low fees and flexibility.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="section bg-darker">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <h2>Weekly Highlights</h2>
+                </div>
+                <div class="products-grid">
+                    <div class="product-card scroll-reveal">
+                        <div class="product-img">
+                            <img src="https://images.unsplash.com/photo-1637691383916-3b408fd91411?q=80&w=1169&auto=format&fit=crop" alt="Hardware Wallet">
+                        </div>
+                        <div class="product-info">
+                            <h3>Ledger Nano X Custom</h3>
+                            <div class="price">
+                                <span>0.05 ETH</span>
+                                <small>~$150.00</small>
+                            </div>
+                            <button class="btn btn-outline full-width buy-btn" data-item="Ledger Nano X" data-price="0.05">Buy with Crypto</button>
+                        </div>
+                    </div>
+                    <div class="product-card scroll-reveal delay-100">
+                        <div class="product-img">
+                            <img src="https://images.unsplash.com/photo-1702471897393-47ec1ba1192b?q=80&w=740&auto=format&fit=crop" alt="VR Headset">
+                        </div>
+                        <div class="product-info">
+                            <h3>Meta Quest 3</h3>
+                            <div class="price">
+                                <span>2.1 SOL</span>
+                                <small>~$500.00</small>
+                            </div>
+                            <button class="btn btn-outline full-width buy-btn" data-item="Meta Quest 3" data-price="2.1">Buy with Crypto</button>
+                        </div>
+                    </div>
+                     <div class="product-card scroll-reveal delay-200">
+                        <div class="product-img">
+                            <img src="https://images.unsplash.com/photo-1588200908342-23b585c03e26?q=80&w=1170&auto=format&fit=crop" alt="Gaming Monitor">
+                        </div>
+                        <div class="product-info">
+                            <h3>Monitor 144hz 4k</h3>
+                            <div class="price">
+                                <span>450 USDT</span>
+                            </div>
+                            <button class="btn btn-outline full-width buy-btn" data-item="Monitor 144hz" data-price="450">Buy with Crypto</button>
+                        </div>
+                    </div>
+                    <div class="product-card scroll-reveal delay-300">
+                        <div class="product-img">
+                            <img src="https://images.unsplash.com/photo-1541807084-5c52b6b3adef?q=80&w=687&auto=format&fit=crop" alt="Laptop">
+                        </div>
+                        <div class="product-info">
+                            <h3>Pro Laptop</h3>
+                            <div class="price">
+                                <span>1,300 USDT</span>
+                            </div>
+                            <button class="btn btn-outline full-width buy-btn" data-item="Pro Laptop" data-price="1300">Buy with Crypto</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="section">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <h2>Community Feedback</h2>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card scroll-reveal">
+                        <p>"Finally managed to build my setup using my DeFi yields without off-ramping to a bank. Amazing!"</p>
+                        <div class="author">
+                            <img src="https://placehold.co/50x50/333/FFF?text=DH" alt="User Photo">
+                            <div>
+                                <h4>DevHolder.eth</h4>
+                                <span>Web3 Developer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card scroll-reveal delay-100">
+                        <p>"Super fast process via MetaMask. The product arrived in 2 days. Highly recommend Crypto Store."</p>
+                        <div class="author">
+                            <img src="https://placehold.co/50x50/333/FFF?text=AL" alt="User Photo">
+                            <div>
+                                <h4>Anna Lewis</h4>
+                                <span>NFT Artist</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-final section">
+            <div class="container text-center scroll-reveal">
+                <h2>Ready to spend your coins?</h2>
+                <p>Join thousands of customers who chose financial freedom.</p>
+                <br>
+                <a href="#products" class="btn btn-primary btn-lg">Explore Shop</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>CryptoStore.</h3>
+                <p>The #1 Native-Web3 electronics store.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Community</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Crypto Store. All rights reserved. Payments via Blockchain.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
